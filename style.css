@@ -1,0 +1,33 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    padding: 100px 0;
+}
+
+.project-card {
+    display: none;
+}
+
+.project-card.active {
+    display: block;
+}
+
+/* Dark Mode Styling */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.navbar.dark-mode {
+    background-color: #1a1a1a;
+}
+
+.card.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
