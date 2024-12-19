@@ -6,18 +6,4 @@ darkModeToggle.addEventListener('change', () => {
     document.querySelectorAll('.card').forEach(card => card.classList.toggle('dark-mode'));
 });
 
-// Project Filter
-const filterButtons = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
 
-filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const filter = button.getAttribute('data-filter');
-        projectCards.forEach(card => {
-            card.classList.remove('active');
-            if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                card.classList.add('active');
-            }
-        });
-    });
-});
